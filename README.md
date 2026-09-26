@@ -27,7 +27,6 @@ I led the design and implementation of a relational database for a fictional mid
 |---|---|
 | [`database/script_maestro_sgco.sql`](database/script_maestro_sgco.sql) | Full schema (27 tables), seed data, and 5+ verification queries |
 | [`diagrams/diagrama_sgco.svg`](diagrams/diagrama_sgco.svg) / `.png` | Complete entity-relationship diagram |
-| [`docs/informe_tecnico_SGCO.pdf`](docs/informe_tecnico_SGCO.pdf) | Full technical report (Spanish, academic submission) |
 
 ---
 
@@ -50,17 +49,4 @@ Sistema de Gestión para Clínica Odontológica (SGCO), diseñado para una clín
 
 ### Limitación identificada
 
-El sistema no cuenta con un mecanismo uniforme de auditoría o baja lógica: algunas tablas incorporan una columna `activo` o `estado`, mientras que otras no la tienen, lo que impide desactivar un insumo o proveedor sin eliminarlo físicamente. Una versión futura podría resolver esto con columnas de auditoría estandarizadas (`activo`, `fecha_creacion`, `creado_por`) en todas las tablas transaccionales, o mediante una tabla central de bitácora de cambios.
-
-### Contenido del repositorio
-
-| Ruta | Descripción |
-|---|---|
-| [`database/script_maestro_sgco.sql`](database/script_maestro_sgco.sql) | Esquema completo (27 tablas), datos de prueba y consultas de verificación |
-| [`diagrams/diagrama_sgco.svg`](diagrams/diagrama_sgco.svg) / `.png` | Diagrama entidad-relación completo |
-| [`docs/informe_tecnico_SGCO.pdf`](docs/informe_tecnico_SGCO.pdf) | Informe técnico completo (entrega académica, en español) |
-
----
-
-**Autor:** Byron Almeida Coello — [LinkedIn](https://www.linkedin.com/in/byronalmeidacoello)
-**Curso:** Fundamentos de Bases de Datos Relacionales — Universidad Técnica Estatal de Quevedo (UTEQ), 2026
+El sistema no cuenta con un mecanismo uniforme
